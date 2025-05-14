@@ -30,8 +30,7 @@ body {
 main {
   width: 450px;
   min-height: 100vh;
-  background: url("https://play31.atmhtml5games.com/content/themes/arcade-two/images/background.png")
-    no-repeat center center;
+  background: url("https://play31.atmhtml5games.com/content/themes/arcade-two/images/background.png") no-repeat center center;
   background-size: cover;
   max-width: 100%;
   margin: 0 auto;
@@ -186,6 +185,7 @@ nav {
   color: var(--bs-link-color);
   -webkit-font-smoothing: antialiased;
 }
+
 .ahover {
   position: absolute;
   color: white;
@@ -199,6 +199,7 @@ nav {
   width: 148px;
   height: 77px;
 }
+
 .listgame {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
@@ -206,8 +207,14 @@ nav {
   height: 190px;
   width: 110px;
 }
+
 .Comments {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
   color: rgba(225, 225, 225, 0.6);
+}
+
+.textcolor {
+  color: #e1e1e199;
+  margin-top: 8px;
 }

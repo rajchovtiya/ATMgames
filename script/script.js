@@ -119,12 +119,50 @@ $(() => {
 });
 
 $(() => {
+    let game_container = document.querySelector(".game-container")
     let data = async () => {
+        game_container.children = ""
         let jsondeta = await fetch("deta.json")
         let sconddeta = await jsondeta.json()
-        console.log(sconddeta)
+        let name = localStorage.getItem("link_name");
+        sconddeta.forEach((e) => {
+            e.Description.forEach((em) => {
+                if (e.title_name == JSON.parse(name)) {
+                    let p = document.createElement("p")
+                    let p2 = document.createElement("p")
+                    let p3 = document.createElement("p")
+                    let p4 = document.createElement("p")
+                    let p5 = document.createElement("p")
+                    let p6 = document.createElement("p")
+
+                    p.classList.add("textcolor")
+                    p2.classList.add("textcolor")
+                    p3.classList.add("textcolor")
+                    p4.classList.add("textcolor")
+                    p5.classList.add("textcolor")
+                    p6.classList.add("textcolor")
+                    p.innerText = em.text1
+                    p2.innerText = em.text2
+                    p3.innerText = em.text3
+                    p4.innerText = em.text4
+                    p5.innerText = em.text5
+                    p6.innerText = em.text6
+                    game_container.appendChild(p)
+                    game_container.appendChild(p2)
+                    game_container.appendChild(p3)
+                    game_container.appendChild(p4)
+                    game_container.appendChild(p5)
+                    game_container.appendChild(p6)
+
+                }
+            })
+
+
+        })
+
     }
 
     data()
 })
+
 
