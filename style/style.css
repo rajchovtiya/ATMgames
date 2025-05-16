@@ -34,6 +34,7 @@ main {
   background-size: cover;
   max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 nav {
@@ -196,8 +197,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 148px;
-  height: 77px;
+  margin-top: 30%;
 }
 
 .listgame {
